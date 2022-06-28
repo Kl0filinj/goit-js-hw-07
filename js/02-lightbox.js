@@ -13,16 +13,8 @@ const makeGalleryMarkup = galleryItems
 
 galleryContainer.insertAdjacentHTML('afterbegin', makeGalleryMarkup);
 
-// function getCaptionOfImage() {
-//   const imageRef = document.querySelector('.gallery__image');
-
-//   //   return `${imageRef.alt}`;
-//   //   return event.target();
-// }
-
 var newGallery = new SimpleLightbox('.gallery a', {
-  //   captionType: 'text',
-  //   captionSelector: 'www',
+  captionsData: 'alt',
   captionDelay: 250,
 });
 
